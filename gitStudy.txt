@@ -2,3 +2,14 @@
 2.git commit 提交文件（可一次性提交多个）
 3.git status 查看git仓库的状态
 4.git diff 查看修改的内容
+5.git log 查看历史提交记录
+	git log --pretty=oneline 只显示commitId和提交说明
+6.git reset --hard head^  回退历史版本
+	(head^ 回退上次版本  head^^回退上上次版本  head~100 回退上100次版本)
+7.git reflog 记录每一次命令
+8.git checkout -- filename   在工作区修改的内容全部撤回
+	1.修改后还没有放到暂存区，撤回到和版本库一模一样
+	2.修改后已放到暂存区，又做了修改，撤回到添加到暂存区的状态
+	（撤回到最近的commit或者add状态）
+9.git reset head filename  添加到暂存的文件撤回到工作区
+10.git rm filename  删除文件
